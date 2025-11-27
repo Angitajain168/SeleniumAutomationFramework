@@ -3,6 +3,8 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import com.sun.tools.sjavac.Log;
+
 public class LoginPage {
 	
 	private WebDriver driver;
@@ -21,7 +23,7 @@ public class LoginPage {
 	 driver.findElement(searchBox).sendKeys(search);
  }
  public void searchicon () {
-	 
+		Log.info("Clicking Search button");
 	 driver.findElement(searchIcon).click();
 
  }
